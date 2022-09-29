@@ -27,6 +27,13 @@ public class Cat {
 	private static final int TAIL_HEIGHT = 10;
 	private static final int TAIL_LENGTH = 30;
 	
+	
+	private static final int EAR_HEIGHT = 30;
+	private static final int EAR_WIDTH = 10;
+
+	
+	
+	
 	// draw will render the Cat on the Graphics object
 	public void draw(Graphics g, int catX, int catY)
 	{
@@ -68,6 +75,11 @@ public class Cat {
 		g2.fillOval(120, 130, TAIL_LENGTH, TAIL_HEIGHT);
 		
 		
+		// Draw the ears
+		g2.setColor(catColor);
+		g2.fillRect(60, 40, EAR_WIDTH, EAR_HEIGHT);
+		g2.fillRect(HEAD_DIMENSION+30, 40, EAR_WIDTH, EAR_HEIGHT);
+
 		
 	}
 }
