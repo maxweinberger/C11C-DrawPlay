@@ -23,8 +23,9 @@ public class Cat {
 	private static final int MOUTH_Y = HEAD_DIMENSION/5 * 3;
 	
 	private static final int TAIL_X = HEAD_DIMENSION;
-	private static final int TAIL_HEIGHT = 3;
-	private static final int TAIL_LENGTH = 10;
+	private static final int TAIL_Y = HEAD_DIMENSION;
+	private static final int TAIL_HEIGHT = 10;
+	private static final int TAIL_LENGTH = 30;
 	
 	// draw will render the Cat on the Graphics object
 	public void draw(Graphics g, int catX, int catY)
@@ -63,6 +64,9 @@ public class Cat {
 		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);
 		
 		// Draw the tail
+		g2.setColor(catColor);
+		g2.fillOval(120, 130, TAIL_LENGTH, TAIL_HEIGHT);
+		
 		
 	}
 }
