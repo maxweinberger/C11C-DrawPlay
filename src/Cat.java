@@ -77,8 +77,8 @@ public class Cat {
 		
 		// Draw the ears
 		g2.setColor(catColor);
-		g2.fillRect(60, 40, EAR_WIDTH, EAR_HEIGHT);
-		g2.fillRect(HEAD_DIMENSION+30, 40, EAR_WIDTH, EAR_HEIGHT);
+		g2.fillOval(60, 50, EAR_WIDTH, EAR_HEIGHT);
+		g2.fillOval(HEAD_DIMENSION+30, 50, EAR_WIDTH, EAR_HEIGHT);
 
 		
 	}
