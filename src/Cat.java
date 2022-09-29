@@ -12,7 +12,7 @@ public class Cat {
 	private static final int EYE_SEPARATION = HEAD_DIMENSION/3;
 	// pick eye dimensions
 	private static final int EYE_HEIGHT = 20;
-	private static final int EYE_WIDTH = 10;
+	private static final int EYE_WIDTH = 20;
 	private static final int PUPIL_HEIGHT = 18;
 	private static final int PUPIL_WIDTH = 5;
 	// pick mouth height, width is based on head dimension
@@ -66,6 +66,7 @@ public class Cat {
 		// Draw the tail
 		g2.setColor(catColor);
 		g2.fillOval(120, 130, TAIL_LENGTH, TAIL_HEIGHT);
+		
 		
 		
 	}
