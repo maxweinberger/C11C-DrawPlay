@@ -13,6 +13,8 @@ public class Cat {
 	// pick eye dimensions
 	private static final int EYE_HEIGHT = 20;
 	private static final int EYE_WIDTH = 10;
+	private static final int PUPIL_HEIGHT = 18;
+	private static final int PUPIL_WIDTH = 5;
 	// pick mouth height, width is based on head dimension
 	private static final int MOUTH_HEIGHT = 10;
 	private static final int MOUTH_WIDTH = HEAD_DIMENSION/4;
@@ -27,15 +29,22 @@ public class Cat {
 		int x=catX;
 		int y=catY;
 		// Draw the head
-		g2.setColor(Color.black);
+		g2.setColor(new Color(113, 99, 90));
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
 		g2.setColor(Color.green);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		g2.setColor(Color.black);
+		g2.fillOval(x, y, PUPIL_WIDTH, PUPIL_HEIGHT);
 		x += EYE_SEPARATION;
+		
+		g2.setColor(Color.green);
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		g2.setColor(Color.black);
+		g2.fillOval(x, y, PUPIL_WIDTH, PUPIL_HEIGHT);
+		
 		// Draw the mouth
 		g2.setColor(Color.pink);
 		x = catX + MOUTH_X;
