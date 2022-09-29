@@ -38,7 +38,7 @@ public class Cat {
 	public void draw(Graphics g, int catX, int catY)
 	{
 		// Add cat color
-		Color catColor = new Color(113, 99, 90);
+		Color catColor = new Color(113, 69, 90);
 				
 		Graphics2D g2 = (Graphics2D) g;
 		int x=catX;
@@ -55,9 +55,9 @@ public class Cat {
 		g2.fillOval(x, y, PUPIL_WIDTH, PUPIL_HEIGHT);
 		x += EYE_SEPARATION;
 		
-		g2.setColor(Color.green);
+		g2.setColor(Color.blue);
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
-		g2.setColor(Color.black);
+		g2.setColor(Color.white);
 		g2.fillOval(x, y, PUPIL_WIDTH, PUPIL_HEIGHT);
 		
 		// Draw the mouth
