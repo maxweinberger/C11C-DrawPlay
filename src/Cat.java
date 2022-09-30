@@ -1,3 +1,5 @@
+// Dylan cormican & Maxwell Weinberger
+
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;
